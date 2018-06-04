@@ -1,19 +1,29 @@
+* { margin:0; padding:0; box-sizing:border-box;}
 body {
-	padding: 10px 50px 0 50px;
+	color:#222;
 	font-family: 'Open Sans',sans-serif;
 }
-
-p {
-	font-size: 14px;
+ul { padding-left:1.25em;}
+section {
+	padding:5em 0;
 }
-
+h1 {
+	font-family: times, serif;
+	font-size:3em;
+	color:#fff;
+}
+h1 span {
+	display:block;
+	font-size: 2em;
+}
 #main {
 	background: url("http://www.equilar.com/images/blog/372/blog-3.20-board-skills-by-age-group-800x400.jpg");
-	background-size: 100%;
+	background-size: cover;
+	height: 80vh;
 }
 
 #copyright {
-	background-color: black;
+	background-color: #222;
 	color: white;
 }
 
@@ -30,16 +40,15 @@ footer {
 }
 
 .button {
-	width: 100%;
-	max-width: 105px;
 	color: white;
 	background-color: #0e82c6;
 	border: none;
 	font-size: 14px;
-	padding: 5px 15px;
+	padding: 1em 2em;
 	font-weight: 500;
 	text-decoration: none;
 	text-align: center;
+	display: inline-block;
 }
 
 .promo {
