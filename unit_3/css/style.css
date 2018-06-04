@@ -3,6 +3,10 @@ body {
 	font-family: 'Open Sans',sans-serif;
 }
 
+p {
+	font-size: 14px;
+}
+
 #main {
 	background: url("http://www.equilar.com/images/blog/372/blog-3.20-board-skills-by-age-group-800x400.jpg");
 	background-size: 100%;

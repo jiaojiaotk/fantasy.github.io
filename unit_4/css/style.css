@@ -1,0 +1,72 @@
+/* Open Sans from Google Fonts */
+@import url(https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans);
+
+/* Avenir LT Com stored locally */
+@font-face {
+  font-family: 'Avenir LT Com';
+  src: url('fonts/AvenirLTCom-Black') format('truetype'),
+       url('fonts/AvenirLTCom-BlackOblique') format('truetype'),
+       url('fonts/AvenirLTCom-Book') format('truetype'),
+       url('fonts/AvenirLTCom-BookOblique')  format('truetype'), 
+       url('fonts/AvenirLTCom-Heavy') format('truetype'),
+       url('fonts/AvenirLTCom-HeavyOblique') format('truetype'),
+       url('fonts/AvenirLTCom-Light') format('truetype'),
+       url('fonts/AvenirLTCom-LightOblique') format('truetype'),
+       url('fonts/AvenirLTCom-Medium') format('truetype'),
+       url('fonts/AvenirLTCom-MediumOblique')  format('truetype'),
+       url('fonts/AvenirLTCom-Oblique') format('truetype'),
+       url('fonts/AvenirLTCom-Roman')  format('truetype');
+}
+
+body {
+	padding: 10px 50px 0 50px; 
+}
+
+p {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+	background: url("http://www.equilar.com/images/blog/372/blog-3.20-board-skills-by-age-group-800x400.jpg");
+	background-size: 100%;
+}
+
+#copyright {
+	background-color: black;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 600;
+	color: #0e82c6;
+}
+
+footer {
+	background-color: #369;
+	color: white;
+	text-align: center;
+}
+
+.button {
+	width: 100%;
+	max-width: 105px;
+	color: white;
+	background-color: #369;
+	border: none;
+	font-size: 14px;
+	padding: 5px 15px;
+	font-weight: 500;
+	text-decoration: none;
+	text-align: center;
+}
+
+.promo {
+	text-align: center;
+	max-width: 500px;
+}
+
+h1, h2, h3 {
+	font-family: 'Avenir LT Com', sans-serif;
+}
