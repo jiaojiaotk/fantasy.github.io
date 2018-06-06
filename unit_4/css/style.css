@@ -18,55 +18,103 @@
        url('fonts/AvenirLTCom-Roman')  format('truetype');
 }
 
+* {
+	margin:0; padding:0; box-sizing:border-box;
+}
+
 body {
 	padding: 10px 50px 0 50px; 
 }
 
 p {
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
+	color: #323232;
 }
 
-#main {
+#hero {
 	background: url("http://www.equilar.com/images/blog/372/blog-3.20-board-skills-by-age-group-800x400.jpg");
-	background-size: 100%;
+	background-size: cover;
+	height: 80vh;
+	padding: 10em;
+}
+
+section {
+	padding: 3em;
 }
 
 #copyright {
 	background-color: black;
 	color: white;
+	padding: 1.5em;
 }
 
 a {
 	text-decoration: none;
 	font-weight: 600;
 	color: #0e82c6;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+	font-family: 'Avenir LT Com', sans-serif;
+	color: #052e47;
+}
+
+h3 {
+	font-family: 'Avenir LT Com', sans-serif;
+	color: #ffffff;
+	padding: 1em;
+}
+
+.button {
+	color: white;
+	background-color: #369;
+	border: none;
+	font-size: 16px;
+	padding: 1em 2em;
+	font-weight: 500;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+}
+
+.promo {
+	max-width: 500px;
+	width: 50%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.prodimg {
+	width: 8em;
+}
+
+h1 span {
+	display:block;
+	font-size: 2em;
 }
 
 footer {
 	background-color: #369;
+	text-align: center;
+}
+
+footer a {
+	color: #b2d9f0;
+	padding: 1em;
+}
+
+footer p {
 	color: white;
-	text-align: center;
 }
 
-.button {
-	width: 100%;
-	max-width: 105px;
-	color: white;
-	background-color: #369;
-	border: none;
-	font-size: 14px;
-	padding: 5px 15px;
-	font-weight: 500;
-	text-decoration: none;
-	text-align: center;
-}
-
-.promo {
-	text-align: center;
-	max-width: 500px;
-}
-
-h1, h2, h3 {
-	font-family: 'Avenir LT Com', sans-serif;
+footer img {
+	width: 2em;
+	height: 2em;
 }
