@@ -24,6 +24,8 @@
 
 body {
 	padding: 10px 50px 0 50px; 
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 p {
@@ -78,12 +80,19 @@ h3 {
 	text-decoration: none;
 	text-align: center;
 	display: inline-block;
+	margin: 1em;
 }
 
-.promo {
-	max-width: 500px;
-	width: 50%;
-	margin: -2px;
+#promo-left {
+	background: url("http://www.equilar.com/images/BOX1 v2.png");
+	background-size: cover;
+	padding: 10em;
+}
+
+#promo-right {
+	background: url("http://www.equilar.com/images/BOX2 v2.png");
+	background-size: cover;
+	padding: 10em;
 }
 
 .center {
@@ -92,8 +101,12 @@ h3 {
     width: 60%;
 }
 
-.prodimg {
+.prod-img-name {
 	width: 8em;
+}
+
+.prod-example-image {
+	width: 500px;
 }
 
 h1 span {
