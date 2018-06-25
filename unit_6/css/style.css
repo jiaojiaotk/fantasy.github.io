@@ -1,21 +1,21 @@
 /* Open Sans from Google Fonts */
-@import url(https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 /* Avenir LT Com stored locally */
 @font-face {
   font-family: 'Avenir LT Com';
-  src: url('fonts/AvenirLTCom-Black') format('truetype'),
-       url('fonts/AvenirLTCom-BlackOblique') format('truetype'),
-       url('fonts/AvenirLTCom-Book') format('truetype'),
-       url('fonts/AvenirLTCom-BookOblique')  format('truetype'), 
-       url('fonts/AvenirLTCom-Heavy') format('truetype'),
-       url('fonts/AvenirLTCom-HeavyOblique') format('truetype'),
-       url('fonts/AvenirLTCom-Light') format('truetype'),
-       url('fonts/AvenirLTCom-LightOblique') format('truetype'),
-       url('fonts/AvenirLTCom-Medium') format('truetype'),
-       url('fonts/AvenirLTCom-MediumOblique')  format('truetype'),
-       url('fonts/AvenirLTCom-Oblique') format('truetype'),
-       url('fonts/AvenirLTCom-Roman')  format('truetype');
+  src: url('fonts/AvenirLTCom-Black.ttf') format('truetype'),
+       url('fonts/AvenirLTCom-BlackOblique.ttf') format('truetype'),
+       url('fonts/AvenirLTCom-Book.ttf') format('truetype'),
+       url('fonts/AvenirLTCom-BookOblique.ttf')  format('truetype'), 
+       url('fonts/AvenirLTCom-Heavy.ttf') format('truetype'),
+       url('fonts/AvenirLTCom-HeavyOblique.ttf') format('truetype'),
+       url('fonts/AvenirLTCom-Light.ttf') format('truetype'),
+       url('fonts/AvenirLTCom-LightOblique.ttf') format('truetype'),
+       url('fonts/AvenirLTCom-Medium.ttf') format('truetype'),
+       url('fonts/AvenirLTCom-MediumOblique.ttf')  format('truetype'),
+       url('fonts/AvenirLTCom-Oblique.ttf') format('truetype'),
+       url('fonts/AvenirLTCom-Roman.ttf')  format('truetype');
 }
 
 * {
@@ -85,14 +85,32 @@ h3 {
 
 #promo-left {
 	background: url("http://www.equilar.com/images/BOX1 v2.png");
-	background-size: cover;
-	padding: 10em;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 5em;
+	float: left;
+	width: 50%;
+}
+
+#promo-left:hover {
+  background: url('http://www.equilar.com/images/BOX1 v2-hover.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #promo-right {
 	background: url("http://www.equilar.com/images/BOX2 v2.png");
-	background-size: cover;
-	padding: 10em;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 5em;
+	float: left;
+	width: 50%;
+}
+
+#promo-right:hover {
+  background: url('http://www.equilar.com/images/BOX2 v2-hover.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .center {
@@ -108,6 +126,7 @@ h3 {
 .prod-example-image {
 	width: 500px;
 	float: right;
+	border: 1px solid grey;
 }
 
 h1 span {
@@ -127,13 +146,41 @@ footer a {
 
 footer p {
 	color: white;
+	display: block;
 }
 
 footer img {
 	width: 2em;
 	height: 2em;
+	margin: 0.2em;
 }
 
-.float-left {
+section div{
 	float: left;
+	display: block;
+	width: 50%;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+section {
+	border-bottom: solid  1px;
+}
+
+aside div{
+	margin-left: auto;
+    margin-right: auto;
+    width: 20%
+}
+
+#footer-float {
+	float: left;
+	width: 33%;
 }
