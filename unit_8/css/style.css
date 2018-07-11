@@ -231,7 +231,7 @@ aside div{
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1300px) {
 	#promo-left, #promo-right, #promo-left:hover, #promo-right:hover {
 		float: none;
 		width: auto;
