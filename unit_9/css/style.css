@@ -29,7 +29,7 @@ body {
 	color: #323232;
 }
 
-nav ul li{
+ul li{
 	float: left;
 	list-style-type: none;
 	padding: 10px;
@@ -39,12 +39,17 @@ nav {
 	float: right;
 }
 
-main {
+#hero {
 	background: url("http://www.equilar.com/images/blog/372/blog-3.20-board-skills-by-age-group-800x400.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 100%
+	padding: 1em;
+}
+
+main div {
+	padding: 1em;
 }
 
 section {
@@ -52,7 +57,7 @@ section {
 }
 
 .wrapper {
-	max-width: 1400px;
+	max-width: 1600px;
 	margin: auto;
 }
 
@@ -78,7 +83,6 @@ h1, h2 {
 h3 {
 	font-family: 'Avenir LT Com', sans-serif;
 	color: #ffffff;
-	padding: 1em;
 }
 
 .button {
@@ -101,12 +105,15 @@ h3 {
 	background-position: center left;
 	float: left;
 	width: 50%;
+	padding: 1em;
 }
 
 #promo-left:hover {
   background: url('http://www.equilar.com/images/BOX1 v2-hover.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center left;
+  padding: 1em;
 }
 
 #text-container-left, #text-container-right {
@@ -127,6 +134,7 @@ h3 {
 	background-position: center right;
 	float: left;
 	width: 50%;
+	padding: 1em;
 }
 
 #promo-right:hover {
@@ -134,13 +142,14 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;
+  padding: 1em;
 }
 
 .position {
 	position: absolute;
 	left:50%;
 	top: 50%;
-	transform: translate(-50% -50%);
+	transform: translateX(-50% -50%);
 }
 
 .center {
@@ -175,7 +184,7 @@ footer a {
 	padding: 1em;
 }
 
-footer p {
+footer p, footer li {
 	color: white;
 	display: block;
 }
@@ -216,41 +225,7 @@ aside div{
 	width: 33%;
 }
 
-@media only screen and (min-width: 1897px) {
-	#promo-left {
-		background: url("http://www.equilar.com/images/BOX1 v2.png");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center left;
-		float: left;
-		width: 50%;
-	}
-
-	#promo-left:hover {
-	  background: url('http://www.equilar.com/images/BOX1 v2-hover.png');
-	  background-size: cover;
-	  background-repeat: no-repeat;
-	  background-position: center left;
-	}
-
-	#promo-right {
-		background: url("http://www.equilar.com/images/BOX2 v2.png");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center right;
-		float: left;
-		width: 50%;
-	}
-
-	#promo-right:hover {
-	  background: url('http://www.equilar.com/images/BOX2 v2-hover.png');
-	  background-size: cover;
-	  background-repeat: no-repeat;
-	  background-position: center right;
-	}
-}
-
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1250px) {
 	#promo-left, #promo-right, #promo-left:hover, #promo-right:hover {
 		float: none;
 		width: auto;
@@ -270,9 +245,14 @@ aside div{
 		float: none;
 		width: auto;
 	}
+
+	.prod-example-image {
+		float: left;
+		width: 50%;
+	}
 }
 
-@media only screen and (max-width: 1196px) {
+@media only screen and (max-width: 786px) {
 	.prod-example-image {
 		float: none;
 		width: 100%;
