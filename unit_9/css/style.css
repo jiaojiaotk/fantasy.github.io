@@ -40,16 +40,24 @@ nav {
 }
 
 #hero {
-	background: url("http://www.equilar.com/images/blog/372/blog-3.20-board-skills-by-age-group-800x400.jpg");
+	background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("http://www.equilar.com/images/blog/372/blog-3.20-board-skills-by-age-group-800x400.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 100%
-	padding: 1em;
+	padding: 15em 0 0 15em;
+	height: 75vh;
+	position: relative;
 }
 
-main div {
-	padding: 1em;
+.transparent {
+	position: absolute;
+	top: 0;
+   	left: 0;
+   	width: 100%;
+   	height: 100%;
+   	background-color: black;
+   	opacity: 0.6;
 }
 
 section {
@@ -102,7 +110,7 @@ h3 {
 	background: url("http://www.equilar.com/images/BOX1 v2.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center left;
+	background-position: center right;
 	float: left;
 	width: 50%;
 	padding: 1em;
@@ -112,14 +120,23 @@ h3 {
   background: url('http://www.equilar.com/images/BOX1 v2-hover.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: center right;
   padding: 1em;
 }
 
-#text-container-left, #text-container-right {
+#text-container-left {
 	width: 50%;
 	margin-right: auto;
 	margin-left: auto;
+	text-align: left;
+
+}
+
+#text-container-right {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: right;
 
 }
 
@@ -131,7 +148,7 @@ h3 {
 	background: url("http://www.equilar.com/images/BOX2 v2.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center right;
+	background-position: center left;
 	float: left;
 	width: 50%;
 	padding: 1em;
@@ -141,7 +158,7 @@ h3 {
   background: url('http://www.equilar.com/images/BOX2 v2-hover.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: center left;
   padding: 1em;
 }
 
@@ -199,6 +216,10 @@ section div{
 	float: left;
 	display: block;
 	width: 50%;
+	padding: 1em;
+}
+footer div div {
+	padding: 1em;
 }
 
 .clearfix:after {
@@ -220,12 +241,21 @@ aside div{
     width: 20%
 }
 
-#footer-float {
+.footer-float {
 	float: left;
-	width: 33%;
+	width: 33.33%;
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 900px) {
+
+	body {
+		padding: 0;
+	}
+
+	header {
+		padding: 1em;
+	}
+
 	#promo-left, #promo-right, #promo-left:hover, #promo-right:hover {
 		float: none;
 		width: auto;
@@ -247,15 +277,13 @@ aside div{
 	}
 
 	.prod-example-image {
-		float: left;
-		width: 50%;
-	}
-}
-
-@media only screen and (max-width: 786px) {
-	.prod-example-image {
 		float: none;
 		width: 100%;
+	}
+
+	.footer-float {
+	float: none;
+	width: 100%;
 	}
 
 }
